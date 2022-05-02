@@ -1,0 +1,288 @@
+body{
+    background: #fff;
+}
+/* sidebar-menu-wrap */
+.sidebar-wrap{
+    position: fixed;
+    height: 100vh;
+    padding-right: 50px;
+    background: #fff;
+    box-shadow: 7px 7px 7px rgb(189, 189, 189);
+}
+
+.sidebar-wrap .sidebar-top{
+    padding: 30px 0 30px 50px;
+}
+
+.sidebar-wrap .sidebar-top .logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.sidebar-wrap .sidebar-menu .nav{
+    padding: 30px 30px;
+    margin-top: 50px;
+}
+
+.sidebar-wrap .sidebar-menu .menu{
+    font-size: 20px;
+    padding: 20px;
+    font-family: "Gugi";
+}
+
+.sidebar-social .github{
+    display: flex;
+    width:50px;
+    height:50px;
+    background: url("../images/github.png");
+}
+.sidebar-social .instargram{
+    display: flex;
+    width:50px;
+    height:50px;
+    background: url("../images/instargram.png");
+}
+/* //sidebar-menu-wrap */
+
+/* wrap */
+.wrap{
+    padding-left: 330px;
+}
+/* //wrap */
+
+/* home-wrap */
+#home .home-wrap img{
+    width: 100%;
+}
+
+#home .home-wrap h2{
+    background: #fff;
+    position: absolute;
+    top: 300px;
+    left: 840px;
+    padding:  30px 80px;
+    border-radius: 25px;
+    text-align: center;
+    animation: 1s up forwards;
+}
+
+@keyframes up{
+    0%{
+        opacity: 0;
+        top: 460px;
+    }
+    100%{
+        opacity: 1;
+        top:300px;
+    }
+}
+
+.scroll-down .cross{
+    background: url("../images/cross.png");
+}
+/* //home-wrap */
+
+/* about-wrap */
+#about{
+    padding: 20px 20px 20px 0;
+}
+
+.about-wrap{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.about-wrap h2::after{
+    content: "";
+    display: block;
+    width: 150px;
+    height:2px;
+    background: rgb(26, 25, 25);
+    position: relative;
+    bottom:-20px;
+}
+
+.row ul{
+    display: flex;
+    margin-top: 70px;
+}
+
+.row .profile{
+    padding: 0px 100px 30px  150px;
+}
+
+.row-skill{
+    margin-top: 10px;
+}
+
+.row-skill .C-lang{
+    width: 280px;
+    display: inline-block;
+    margin-left: 80px;
+    padding:5px;
+}
+
+/* .row-skill .C-lang::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.row-skill .C-lang span{
+    float: right;
+}
+
+.row-skill .C-progress-wrap{
+    margin-top: 10px;
+    width: 267px;
+    height: 10px;
+    background: #dbdbdb;
+    position: relative;
+}
+
+.row-skill .C-progress{
+    position: absolute;
+    top: -10px;
+    margin-top: 10px;
+    width: 220px;
+    height: 10px;
+    background: #3b3a3a;
+}
+
+.row-skill .java-lang{
+    width: 280px;
+    display: inline-block;
+    margin-left: 50px;
+    padding:5px;
+}
+
+.row-skill .java-lang span{
+    float: right;
+}
+
+.row-skill .java-wrap{
+    margin-top: 10px;
+    width: 267px;
+    height: 10px;
+    background: #dbdbdb;
+    position: relative;
+}
+
+.row-skill .java-progress{
+    position: absolute;
+    top: -10px;
+    margin-top: 10px;
+    width: 160px;
+    height: 10px;
+    background: #3b3a3a;
+}
+
+.row-skill .python-lang{
+    width: 280px;
+    display: inline-block;
+    margin-left: 50px;
+    padding:5px;
+}
+
+.row-skill .python-lang span{
+    float: right;
+}
+
+.row-skill .python-wrap{
+    margin-top: 10px;
+    width: 267px;
+    height: 10px;
+    background: #dbdbdb;
+    position: relative;
+}
+
+.row-skill .python-progress{
+    position: absolute;
+    top: -10px;
+    margin-top: 10px;
+    width: 115px;
+    height: 10px;
+    background: #3b3a3a;
+}
+
+.facts-wrap{
+    background: #f0f0f0;
+    padding: 80px 35px;
+    box-shadow: 0 5px 15px 0px rgb(0 0 0 / 15%);
+    margin-left: -10px;
+    margin-top: 50px;
+}
+
+.facts-box h2{
+    font-family: "Gugi"; 
+    font-weight: 300; 
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.facts-box h4{
+    font-family:"cafe24"; 
+    margin-bottom: 0; 
+    line-height: 24px;
+    text-align: center;
+}
+
+.facts-box{
+    width: 350px;
+}
+/* //about */
+
+/* portfolio */
+.portfolio-wrap ul{
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.portfolio-wrap li{
+    width:300px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.499);
+    position: relative;
+}
+
+.portfolio-wrap a:hover::after{
+    content: "";
+    display: block;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top:0;
+    border-radius: 10px;
+}
+
+/* //portfolio */
+
+/* profile */
+.profile-contents{
+    width:470px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: #dbdbdb;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 15%);
+}
+.profile-contents th{
+    font-family: "cafe24";
+    border-right: 0.5px solid rgb(158, 158, 158);
+    padding: 5px 30px 5px 50px;
+    
+}
+
+.profile-contents td{
+    font-family: "cafe24";
+    padding: 5px;
+    padding-left: 10px;
+    padding: 5px 40px 5px 50px;
+}
+/* //profile */
